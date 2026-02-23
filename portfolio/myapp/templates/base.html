@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Prabhakar Kr Singh{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* Smooth transition for mobile menu */
+        #mobile-menu {
+            transition: all 0.3s ease-in-out;
+        }
+        #mobile-menu.hidden {
+            display: none;
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 flex flex-col min-h-screen">
+
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <nav class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="/" class="text-xl font-black tracking-tighter uppercase shrink-0">
+                PRABHAKAR<span class="text-blue-600">.</span>
+            </a>
+
+            <ul class="hidden md:flex items-center gap-10 font-medium text-slate-600">
+                <li><a href="/" class="hover:text-blue-600 transition">Home</a></li>
+                <li><a href="{% url 'skills' %}" class="hover:text-blue-600 transition">Skills</a></li>
+                <li><a href="{% url 'about' %}" class="hover:text-blue-600 transition">About</a></li>
+                <li><a href="{% url 'contact' %}" class="hover:text-blue-600 transition">Contact</a></li>
+            </ul>
+
+            <div class="flex items-center gap-4">
+                <a href="{% url 'contact' %}" class="hidden sm:inline-block px-6 py-2.5 bg-slate-900 text-white text-sm font-semibold rounded-full hover:bg-blue-600 transition">
+                    Let's Talk
+                </a>
+                
+                <button id="menu-btn" class="md:hidden p-2 text-slate-600 hover:text-blue-600 focus:outline-none transition-colors">
+                    <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path id="path1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16" />
+                        <path id="path2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16" />
+                        <path id="path3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-6 py-8 space-y-6 shadow-2xl absolute w-full left-0 top-20 z-40">
+            <div class="flex flex-col gap-6 text-center">
+                <a href="/" class="text-xl font-bold text-slate-800 hover:text-blue-600">Home</a>
+                <a href="{% url 'skills' %}" class="text-xl font-bold text-slate-800 hover:text-blue-600">Skills</a>
+                <a href="{% url 'about' %}" class="text-xl font-bold text-slate-800 hover:text-blue-600">About</a>
+                <a href="{% url 'contact' %}" class="text-xl font-bold text-slate-800 hover:text-blue-600">Contact</a>
+                <hr class="border-slate-100">
+                <a href="{% url 'contact' %}" class="inline-block px-6 py-4 bg-blue-600 text-white font-bold rounded-2xl shadow-lg shadow-blue-200">
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="bg-white border-t border-slate-100 py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+            <p class="text-slate-400 text-sm">© 2026 Prabhakar Kr Singh. All Rights Reserved.</p>
+            <div class="flex gap-8 text-slate-600 font-medium text-sm uppercase tracking-wider">
+                <a href="https://www.linkedin.com/in/prabhakar-kr-singh-02072007/" class="hover:text-blue-600 transition">LinkedIn</a>
+                <a href="https://github.com/prabhakarsingh2007" class="hover:text-blue-600 transition">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const path1 = document.getElementById('path1');
+        const path2 = document.getElementById('path2');
+        const path3 = document.getElementById('path3');
+
+        btn.addEventListener('click', () => {
+            const isHidden = menu.classList.toggle('hidden');
+            
+            if (!isHidden) {
+                // Change to 'X' icon
+                path1.setAttribute('d', 'M6 18L18 6');
+                path2.style.opacity = '0';
+                path3.setAttribute('d', 'M6 6l12 12');
+            } else {
+                // Back to Hamburger icon
+                path1.setAttribute('d', 'M4 6h16');
+                path2.style.opacity = '1';
+                path3.setAttribute('d', 'M4 18h16');
+            }
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = menu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                path1.setAttribute('d', 'M4 6h16');
+                path2.style.opacity = '1';
+                path3.setAttribute('d', 'M4 18h16');
+            });
+        });
+    </script>
+
+</body>
+</html>
