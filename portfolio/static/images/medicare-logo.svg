@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">MediCare Logo</title>
+  <desc id="desc">Blue square with plus sign and MediCare text.</desc>
+  <defs>
+    <linearGradient id="medi-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="120" cy="120" r="108" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+
+  <rect x="40" y="40" width="160" height="160" rx="24" fill="url(#medi-bg)"/>
+
+  <rect x="100" y="75" width="40" height="90" rx="4" fill="#ffffff"/>
+  <rect x="75" y="100" width="90" height="40" rx="4" fill="#ffffff"/>
+
+  <text x="120" y="200" font-size="32" font-family="Verdana, sans-serif" font-weight="700" fill="#1d4ed8" text-anchor="middle">MediCare</text>
+</svg>
