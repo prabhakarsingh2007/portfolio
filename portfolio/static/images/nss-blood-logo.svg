@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">NSS Blood Donation Logo</title>
+  <desc id="desc">Red/Crimson circular logo with a blood drop and cross.</desc>
+  <defs>
+    <linearGradient id="nss-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="120" cy="120" r="108" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+  <rect x="40" y="40" width="160" height="160" rx="24" fill="url(#nss-bg)"/>
+
+  <!-- Blood drop shape -->
+  <path d="M120 70 C100 110, 85 125, 85 140 A35 35 0 0 0 155 140 C155 125, 140 110, 120 70 Z" fill="#ffffff"/>
+  
+  <!-- Red cross inside the blood drop -->
+  <rect x="115" y="115" width="10" height="26" rx="2" fill="#ef4444"/>
+  <rect x="107" y="123" width="26" height="10" rx="2" fill="#ef4444"/>
+
+  <text x="120" y="200" font-size="28" font-family="Verdana, sans-serif" font-weight="700" fill="#b91c1c" text-anchor="middle">NSS Blood</text>
+</svg>

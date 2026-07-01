@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Smart College Assistant Logo</title>
+  <desc id="desc">Purple circular logo with a graduation cap icon.</desc>
+  <defs>
+    <linearGradient id="college-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="120" cy="120" r="108" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+  <rect x="40" y="40" width="160" height="160" rx="24" fill="url(#college-bg)"/>
+
+  <!-- Graduation Cap (Mortarboard) -->
+  <!-- Cap Diamond shape -->
+  <polygon points="120,65 170,85 120,105 70,85" fill="#ffffff"/>
+  <!-- Cap Skull (lower cap) -->
+  <path d="M92 94 v18 c0 15, 56 15, 56 0 v-18" fill="#ffffff"/>
+  <!-- Tassel -->
+  <path d="M120 85 L160 100 V122" stroke="#ffffff" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <circle cx="160" cy="125" r="5" fill="#ffffff"/>
+
+  <text x="120" y="200" font-size="26" font-family="Verdana, sans-serif" font-weight="700" fill="#4f46e5" text-anchor="middle">College</text>
+</svg>

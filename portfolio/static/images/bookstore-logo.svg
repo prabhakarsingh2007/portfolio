@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">BookStore Pro Logo</title>
+  <desc id="desc">Amber circular logo with an open book icon.</desc>
+  <defs>
+    <linearGradient id="book-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="120" cy="120" r="108" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+  <rect x="40" y="40" width="160" height="160" rx="24" fill="url(#book-bg)"/>
+
+  <!-- Stylized Book Icon -->
+  <path d="M70 145 C 95 140, 115 145, 120 150 C 125 145, 145 140, 170 145 V 90 C 145 85, 125 90, 120 95 C 115 90, 95 85, 70 90 Z" fill="#ffffff"/>
+  <line x1="120" y1="95" x2="120" y2="150" stroke="#d97706" stroke-width="3" stroke-linecap="round"/>
+
+  <text x="120" y="200" font-size="26" font-family="Verdana, sans-serif" font-weight="700" fill="#d97706" text-anchor="middle">BookStore</text>
+</svg>
