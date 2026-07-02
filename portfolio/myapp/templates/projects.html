@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Projects | Prabhakar Kr Singh{% endblock %}
+
+{% block content %}
+<section class="max-w-7xl mx-auto px-6 py-12 md:py-20">
+    <div class="max-w-3xl mb-12 md:mb-16 text-center md:text-left mx-auto md:mx-0">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 mb-6">
+            <span class="relative flex h-2 w-2">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+            </span>
+            <span class="text-blue-700 font-bold text-[10px] tracking-widest uppercase">Selected Work</span>
+        </div>
+        <h1 class="text-4xl md:text-6xl lg:text-8xl font-black text-slate-900 leading-tight md:leading-none tracking-tighter mb-6">
+            Projects that I have <span class="text-blue-600">built</span>.
+        </h1>
+        <p class="text-slate-500 text-lg md:text-xl leading-relaxed">
+            A collection of live products and production-style Django applications focused on real-world workflows, clean UI, and practical business problems.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 md:gap-6">
+        <a href="https://kharchagraph.in/" target="_blank" rel="noopener noreferrer" class="lg:col-span-12 block p-6 md:p-10 bg-white rounded-[2rem] md:rounded-[3rem] border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-10">
+                <div class="max-w-2xl">
+                    <p class="text-[10px] uppercase tracking-[0.25em] font-black text-blue-600 mb-3">Featured Project</p>
+                    <h3 class="text-2xl md:text-3xl font-black text-slate-900 mb-3">KharchaGraph</h3>
+                    <p class="text-slate-500 text-sm md:text-base leading-relaxed mb-6">Smart expense tracker web app for daily kharcha entries, monthly budget planning, recurring expenses, and analytics reports.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">Django</span>
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">Expense Tracker</span>
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">Analytics Dashboard</span>
+                    </div>
+                    <span class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-blue-600 text-white text-xs md:text-sm font-bold">Open Live Project</span>
+                </div>
+                <div class="w-full md:w-64 p-5 bg-slate-50 rounded-2xl border border-slate-200">
+                    <div class="w-16 h-16 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center mb-4">
+                        <img src="{% static 'images/project-logo.svg' %}" alt="Project logo" class="w-12 h-12 object-contain" />
+                    </div>
+                    <h4 class="text-slate-900 font-bold mb-2">Project Logo + Live Link</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Direct live project access with the same clean, clickable card style.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://medicare-django-1.onrender.com" target="_blank" rel="noopener noreferrer" class="lg:col-span-12 block p-6 md:p-10 bg-white rounded-[2rem] md:rounded-[3rem] border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-10">
+                <div class="max-w-2xl">
+                    <p class="text-[10px] uppercase tracking-[0.25em] font-black text-blue-600 mb-3">Featured Project</p>
+                    <h3 class="text-2xl md:text-3xl font-black text-slate-900 mb-3">MediCare</h3>
+                    <p class="text-slate-500 text-sm md:text-base leading-relaxed mb-6">Healthcare management web app with patient profiles, appointment booking, medical records, and doctor dashboard for streamlined clinic operations.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">Django</span>
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">Healthcare System</span>
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">Appointment Booking</span>
+                    </div>
+                    <span class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-blue-600 text-white text-xs md:text-sm font-bold">Open Live Project</span>
+                </div>
+                <div class="w-full md:w-64 p-5 bg-slate-50 rounded-2xl border border-slate-200">
+                    <div class="w-16 h-16 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center mb-4">
+                        <img src="{% static 'images/medicare-logo.svg' %}" alt="MediCare logo" class="w-12 h-12 object-contain" />
+                    </div>
+                    <h4 class="text-slate-900 font-bold mb-2">MediCare System</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Complete healthcare management solution for clinics and hospitals.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://github.com/prabhakarsingh2007/nss_blood_system-" target="_blank" rel="noopener noreferrer" class="lg:col-span-12 block p-6 md:p-10 bg-white rounded-[2rem] md:rounded-[3rem] border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-10">
+                <div class="max-w-2xl">
+                    <p class="text-[10px] uppercase tracking-[0.25em] font-black text-blue-600 mb-3">Featured Project</p>
+                    <h3 class="text-2xl md:text-3xl font-black text-slate-900 mb-3">NSS Blood Donation System</h3>
+                    <p class="text-slate-500 text-sm md:text-base leading-relaxed mb-6">A comprehensive blood donation management platform built with Django that connects blood donors, recipients, hospitals, and NSS volunteers. The system enables emergency blood requests, donor registration, blood inventory management, and an admin dashboard for efficient coordination.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">Django</span>
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">Blood Donation</span>
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">Emergency Requests</span>
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">Admin Dashboard</span>
+                    </div>
+                    <span class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-blue-600 text-white text-xs md:text-sm font-bold">Open Project Repo</span>
+                </div>
+                <div class="w-full md:w-64 p-5 bg-slate-50 rounded-2xl border border-slate-200">
+                    <div class="w-16 h-16 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center mb-4">
+                        <img src="{% static 'images/nss-blood-logo.svg' %}" alt="NSS Blood Donation logo" class="w-12 h-12 object-contain" />
+                    </div>
+                    <h4 class="text-slate-900 font-bold mb-2">NSS Blood Donation</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Streamlined platform coordinating donors, hospitals, and volunteers.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://github.com/prabhakarsingh2007/KitabBazaar" target="_blank" rel="noopener noreferrer" class="lg:col-span-12 block p-6 md:p-10 bg-white rounded-[2rem] md:rounded-[3rem] border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-10">
+                <div class="max-w-2xl">
+                    <p class="text-[10px] uppercase tracking-[0.25em] font-black text-blue-600 mb-3">Featured Project</p>
+                    <h3 class="text-2xl md:text-3xl font-black text-slate-900 mb-3">BookStore Pro</h3>
+                    <p class="text-slate-500 text-sm md:text-base leading-relaxed mb-6">Modern online bookstore with book catalog, shopping cart, coupon discounts, secure checkout, order management, and admin dashboard.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">Django</span>
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">E-Commerce</span>
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">Shopping Cart</span>
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">Secure Checkout</span>
+                    </div>
+                    <span class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-blue-600 text-white text-xs md:text-sm font-bold">Open Project Repo</span>
+                </div>
+                <div class="w-full md:w-64 p-5 bg-slate-50 rounded-2xl border border-slate-200">
+                    <div class="w-16 h-16 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center mb-4">
+                        <img src="{% static 'images/bookstore-logo.svg' %}" alt="BookStore Pro logo" class="w-12 h-12 object-contain" />
+                    </div>
+                    <h4 class="text-slate-900 font-bold mb-2">BookStore Pro</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Feature-rich online bookstore with checkout and order management.</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://github.com/prabhakarsingh2007/SmartCollege" target="_blank" rel="noopener noreferrer" class="lg:col-span-12 block p-6 md:p-10 bg-white rounded-[2rem] md:rounded-[3rem] border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6 md:gap-10">
+                <div class="max-w-2xl">
+                    <p class="text-[10px] uppercase tracking-[0.25em] font-black text-blue-600 mb-3">Featured Project</p>
+                    <h3 class="text-2xl md:text-3xl font-black text-slate-900 mb-3">Smart College Assistant</h3>
+                    <p class="text-slate-500 text-sm md:text-base leading-relaxed mb-6">College management platform for students and faculty with attendance, assignments, notices, results, and secure role-based access.</p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">Django</span>
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">Role-Based Access</span>
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">College Management</span>
+                        <span class="px-3 py-1.5 bg-slate-100 rounded-lg text-[10px] md:text-xs font-bold text-slate-700">Attendance Tracking</span>
+                    </div>
+                    <span class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-blue-600 text-white text-xs md:text-sm font-bold">Open Project Repo</span>
+                </div>
+                <div class="w-full md:w-64 p-5 bg-slate-50 rounded-2xl border border-slate-200">
+                    <div class="w-16 h-16 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-center justify-center mb-4">
+                        <img src="{% static 'images/college-assistant-logo.svg' %}" alt="Smart College Assistant logo" class="w-12 h-12 object-contain" />
+                    </div>
+                    <h4 class="text-slate-900 font-bold mb-2">College Assistant</h4>
+                    <p class="text-slate-500 text-xs leading-relaxed">Role-based platform for students, faculty, and academic administration.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
+{% endblock %}

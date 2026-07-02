@@ -13,3 +13,6 @@ def contact(request):
 
 def skills(request):
     return render(request, 'skills.html')       
+
+def projects(request):
+    return render(request, 'projects.html')
